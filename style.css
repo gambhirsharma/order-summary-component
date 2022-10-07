@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  width: 1440px;
+  height: 900px;
+  background: url(./images/pattern-background-desktop.svg) no-repeat, hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+a {
+  padding-left: 88px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+button {
+  background: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  width: 350px;
+  height: 50px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 10px 5px hsla(224, 23%, 55%, 0.253);
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(224, 23%, 55%);
+}
+
+footer {
+display: flex;
+  justify-content: center;
+}
+
+footer a {
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 650px;
+  margin: auto;
+}
+
+.card1 {
+  background: url(./images/illustration-hero.svg) no-repeat center;
+  width: 450px;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+
+.card2 {
+  background: #fff;
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+  padding: 40px 0 0 0;
+  border-radius: 0 0 15px 15px;
+}
+
+.card2 h1 {
+  color: hsl(223, 47%, 23%);
+}
+
+.card2 p {
+  color: hsl(224, 23%, 55%);
+  padding: 15px 50px 25px 50px;
+}
+
+.plan-box {
+  display: flex;
+  flex-direction: row;
+  background: hsl(225, 100%, 98%);
+  align-items: center;
+  padding: 20px 17px 20px 17px;
+  border-radius: 20px;
+  margin: 0 50px 50px 50px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plan2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+}
+
+.plan2 h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 100%;
+}
+
+.plan2 p {
+  font-size: 16px;
+  padding: 5px 0 0 0;
+}
+
+.cancel {
+  font-weight: 700;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cancel p:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+
+main {
+  width: 400px;
+  height: 700px;
+      background: url(./images/pattern-background-mobile.svg) no-repeat, hsl(225, 100%, 94%);
+  }
+
+  .card {
+      width: 350px;
+      height: 600px;
+  }
+  
+  .card1 {
+      background: url(./images/illustration-hero.svg) no-repeat center;
+      width: 350px;
+      height: 200px;
+  }
+  
+  .card2 {
+      width: 350px;
+      height: 400px;
+      padding: 25px 0 0 0;
+  }
+
+  .card2 p {
+      line-height: 25px;
+      text-align: center;
+      padding: 15px 37px 5px 37px;
+  }
+
+  .plan-box {
+      padding: 15px 20px 15px 20px;
+      margin: 20px;
+  }
+
+  .plan2 p {
+      padding: 5px 0 0 0;
+  }
+
+  a{
+      padding-left: 50px;
+  }
+
+  button {
+      width: 250px;
+      height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px){
+main {
+  width: 768px;
+  height: 1024px;
+}
+}
+
+
+@media screen and (min-width: 1366px) and (max-width: 1439) {
+main {
+  width: 1366px;
+  height: 768px;
+}
+}
+
+@media screen and (min-width: 1440) {
+main {
+  width: 1440px;
+  height: 900px;
+}
+}
+
+@media screen and (min-width: 1920px) {
+main {
+  width: 1920px;
+  height: 1080px;
+      background: url(./images/pattern-background-desktop.svg) repeat-x hsl(225, 100%, 94%);
+}
+
+}
